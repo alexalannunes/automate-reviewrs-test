@@ -5,4 +5,3 @@ pipelines:
     stages:
       - actions:
           - $assignReviewer(["mauricioaires"])
-        until: $reviewerStatus("marcelosousa") == "APPROVED"
