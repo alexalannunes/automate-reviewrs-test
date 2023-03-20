@@ -1,10 +1,6 @@
 api-version: reviewpad.com/v3.x
-
 pipelines:
   - name: security-changes
     stages:
       - actions:
           - $assignReviewer(["mauricioaires"])
-          - $addLabel("bug")
-
-
