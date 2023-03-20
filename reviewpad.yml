@@ -5,6 +5,3 @@ pipelines:
     stages:
       - actions:
           - $assignReviewer(["mauricioaires"])
-          - $addLabel("bug")
-
-
