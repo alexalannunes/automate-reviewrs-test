@@ -1,22 +1,10 @@
 api-version: reviewpad.com/v3.x
 
-
-labels:
-  small:
-    description: Pull request is small
-    color: "#76dbbe"
-  medium:
-    description: Pull request is medium
-    color: "#2986cc"
-  large:
-    description: Pull request is large
-    color: "#c90076"
-
 pipelines:
   - name: security-changes
     stages:
       - actions:
           - $assignReviewer(["mauricioaires"])
-          - $addLabel("small")
+          - $addLabel("bug")
 
 
